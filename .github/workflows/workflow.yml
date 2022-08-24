@@ -8,7 +8,7 @@ name: Workflow
       - master
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-xenial
     strategy:
       fail-fast: false
       matrix:
