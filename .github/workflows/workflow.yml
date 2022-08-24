@@ -13,9 +13,9 @@ jobs:
       fail-fast: false
       matrix:
         ruby:
-          - "2.7.0"
-          - "2.6.5"
-          - "2.5.7"
+          - "2.7"
+          - "2.6"
+          - "2.5"
           - "jruby-9.1.9.0"
         gemfile:
           - "gemfiles/rails_5.2_no_sprockets.gemfile"
@@ -24,18 +24,20 @@ jobs:
           - "gemfiles/rails_5.2_sprockets_3.gemfile"
           - "gemfiles/rails_5.2_sprockets_4.gemfile"
         exclude:
-          - ruby: "2.6.5"
-          - ruby: "2.5.7"
+          - ruby: "2.6"
+          - ruby: "2.5"
           - ruby: "jruby-9.1.9.0"
         include:
-          - ruby: "2.6.5"
+          - ruby: "2.6"
             gemfile: gemfiles/rails_5.2_no_sprockets_webpacker_4.gemfile
-          - ruby: "2.6.5"
+          - ruby: "2.6"
             gemfile: gemfiles/rails_5.2_sprockets_4.gemfile
-          - ruby: "2.5.7"
+          - ruby: "2.5"
             gemfile: gemfiles/rails_5.2_no_sprockets_webpacker_4.gemfile
-          - ruby: "2.5.7"
+            old: true
+          - ruby: "2.5"
             gemfile: gemfiles/rails_5.2_sprockets_4.gemfile
+            old: true
           - ruby: jruby-9.1.9.0
             gemfile: gemfiles/rails_5.2_no_sprockets_webpacker_4.gemfile
             old: true
