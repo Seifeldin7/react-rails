@@ -34,8 +34,10 @@ jobs:
             gemfile: gemfiles/rails_5.2_sprockets_4.gemfile
           - ruby: "2.5"
             gemfile: gemfiles/rails_5.2_no_sprockets_webpacker_4.gemfile
+            old: true
           - ruby: "2.5"
             gemfile: gemfiles/rails_5.2_sprockets_4.gemfile
+            old: true
           - ruby: jruby-9.1.9.0
             gemfile: gemfiles/rails_5.2_no_sprockets_webpacker_4.gemfile
             old: true
